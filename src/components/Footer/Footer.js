@@ -23,9 +23,12 @@ export default function Footer() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
-  // useEffect(() => {
-  //   if (value=== 0) navigate("/")
-  // }, [value])
+  useEffect(() => {
+    if (value=== 0) navigate("/")
+    else if (value=== 1) navigate("/movies")
+    else if (value=== 2) navigate("/series")
+    else if (value=== 3) navigate("/search")
+  }, [value,navigate])
   
 
   return (
