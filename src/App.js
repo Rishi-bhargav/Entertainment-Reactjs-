@@ -1,18 +1,18 @@
-import "./App.css";
-import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
-import { BrowserRouter as Router, Switch, Route,Routes, Link } from "react-router-dom";
-import { Container } from "@material-ui/core";
-import Trending from "./Pages/Trending/Trending";
-import Movies from "./Pages/Movies/Movies";
-import Series from "./Pages/Series/Series";
-import Search from "./Pages/Search/Search";
+import './App.css'
+import Footer from './components/Footer/Footer'
+import Header from './components/Header/Header'
+import { Route, Routes } from 'react-router-dom'
+import { Container } from '@material-ui/core'
+import Trending from './Pages/Trending/Trending'
+import Movies from './Pages/Movies/Movies'
+import Series from './Pages/Series/Series'
+import Search from './Pages/Search/Search'
 
 function App() {
   return (
     <>
       <Header />
-      <div className="App">
+      <div className='App'>
         <Container>
         
             <Routes>
@@ -26,8 +26,7 @@ function App() {
       </div>
       <Footer />
     </>
-
-  );
+  )
 }
 
-export default App;
+export default App
