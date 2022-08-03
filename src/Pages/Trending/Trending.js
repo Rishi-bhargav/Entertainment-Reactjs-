@@ -1,4 +1,3 @@
-
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import CustomPagination from '../../components/Pagination/CustomPagination'
@@ -11,11 +10,11 @@ const Trending = () => {
 
   const fetchTrending =async() => {
     const { data } =await axios.get(
-      `https://api.themoviedb.org/3/trending/all/week?api_key=df3b612cf1d137c54ed91e26a2eb1ccf&page=${page}`
+      `https://api.themoviedb.org/3/trending/all/day?api_key=2ef1ceec32ba25ef401fdf5929030939&page=${page}`
     );
-    console.log(data.results)
     setContent(data.results)
   }
+  
   useEffect(() => {
     fetchTrending()
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -25,7 +24,8 @@ const Trending = () => {
     <div>
       <span className="pageTitle">Trending</span>
       <div className='trending'>
-        {content && content.map((c) => 
+        {//
+        content?.map((c) => 
         <SingleContent
         key={c.id}
         id={c.id}

@@ -1,5 +1,5 @@
 import { unstable_createMuiStrictModeTheme } from '@mui/material/styles';
-import { createTheme, Pagination, ThemeProvider } from '@mui/material'
+import { Pagination, ThemeProvider } from '@mui/material'
 import React from 'react'
 
 const theme = unstable_createMuiStrictModeTheme();

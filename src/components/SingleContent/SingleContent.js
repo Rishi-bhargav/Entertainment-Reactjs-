@@ -4,7 +4,6 @@ import { img_300, noPicture } from "../../config/config";
 import './SingleContent.css';
 
 const SingleContent = ({id,poster,title,date,media_type,vote_average}) => {
-  console.log(title,"poster")
     return (
     <div className='media'>
       <Badge badgeContent={vote_average} color={vote_average>7?'primary':'secondary'}/>
