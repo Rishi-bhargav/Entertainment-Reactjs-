@@ -39,8 +39,8 @@ const Movies = () => {
       setPage={setPage}
       />
       <div className='trending'>
-        {//
-         content?.map((c) => 
+        {content &&
+         content.map((c) => 
         <SingleContent
         key={c.id}
         id={c.id}

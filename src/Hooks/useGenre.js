@@ -7,3 +7,4 @@ const useGenres=(selectedGenres)=>{
 };
 
 export default useGenres;
+

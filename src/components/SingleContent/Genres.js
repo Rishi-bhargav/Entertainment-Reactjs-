@@ -43,8 +43,8 @@ const Genres = ( {
     },[])
   return (
     <div style ={{ padding:"6px 0"}}>
-        {//
-        selectedGenres?.map((genre) =>(
+        {selectedGenres &&
+        selectedGenres.map((genre) =>(
           <Chip 
           label={genre?.name} 
           style={{margin :2}} 
@@ -65,7 +65,8 @@ const Genres = ( {
           onClick={()=>handleAdd(genre)} />
         )
       )} */}
-      {genres.map((genre) => (
+      {genres &&
+      genres.map((genre) => (
         <Chip
           style={{ margin: 2 }}
           label={genre.name}
